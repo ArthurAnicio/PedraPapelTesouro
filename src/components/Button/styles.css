@@ -1,0 +1,64 @@
+.button{
+    width: 10vw;
+    height: 6vh;
+    color: var(--branco);
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 0.8em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button:hover{
+    scale: 1.05;
+}
+
+
+#azul {
+    background-color: var(--azul);
+    transition: 0.2s;
+}
+#azul:hover {
+    background-color: var(--azul-2);
+}
+
+#vermelho {
+    background-color: var(--vermelho);
+    transition: 0.2s;
+}
+#vermelho:hover {
+    background-color: var(--vermelho-2);
+}
+
+#amarelo {
+    background-color: var(--amarelo);
+    transition: 0.2s;
+}
+#amarelo:hover {
+    background-color: var(--amarelo-2);
+}
+
+#verde {
+    background-color: var(--verde);
+    transition: 0.2s;
+}
+#verde:hover {
+    background-color: var(--verde-2);
+}
+
+#roxo {
+    background-color: var(--roxo);
+    transition: 0.2s;
+}
+#roxo:hover {
+    background-color: var(--roxo-2);
+}
+
+#rosa {
+    background-color: var(--rosa);
+    transition: 0.2s;
+}
+#rosa:hover {
+    background-color: var(--rosa-2);
+}

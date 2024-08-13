@@ -1,0 +1,51 @@
+:root{
+    --azul: #2394d4;
+    --azul-2: #126ca0;
+    --azul-escuro: #17038b;
+    --azul-escuro: #0b0147;
+    --vermelho: #f0223d;
+    --vermelho-2: #a1091d;
+    --verde: #28d845;
+    --verde-2: #098a1f;
+    --amarelo: #ddcb29;
+    --amarelo-2: #9c8e0b;
+    --roxo: #560db6;
+    --roxo-2: #300569;
+    --rosa: #e254cb;
+    --rosa-2: #7c186c;
+    --branco: #efe3f3;
+    --preto: #120027;
+    --cinza: #b9b4c0;
+    font-size: 65%;   
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--roxo-2);
+    font-family: Poppins;
+}
+
+#texto-azul{
+    color: var(--azul);
+}
+
+#texto-vermelho{
+    color: var(--vermelho);
+}
+
+#texto-verde{
+    color: var(--verde);
+}
+
+#texto-amarelo{
+    color: var(--amarelo);
+}
+
+#texto-roxo{
+    color: var(--roxo);
+}
+
+#texto-rosa{
+    color: var(--rosa);
+}
