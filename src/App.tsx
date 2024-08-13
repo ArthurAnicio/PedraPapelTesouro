@@ -25,7 +25,7 @@ function App() {
     const machineSelected = choices[randomChoice - 1];
     setMachineChoice(machineSelected);
 
-    // Determinar o vencedor
+    
     if (
       (selectedChoice === 'Pedra' && machineSelected === 'Tesoura') ||
       (selectedChoice === 'Papel' && machineSelected === 'Pedra') ||
