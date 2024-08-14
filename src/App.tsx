@@ -11,7 +11,10 @@ function App() {
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [machineChoice, setMachineChoice] = useState<string | null>(null);
   const [victories, setVictories] = useState(0);
+  const [loses, setLoses] = useState(0);
+  const [draws, setDraws] = useState(0);
   const [result, setResult] = useState<string | null>(null);
+  const [gameOver, setGameOver] = useState(false);
 
   const handleChoice = (choice: string) => {
     setSelectedChoice(choice);
@@ -35,8 +38,10 @@ function App() {
       setResult('Jogador Venceu');
     } else if (selectedChoice === machineSelected) {
       setResult('Empate');
+      setDraws(draws + 1);
     } else {
       setResult('Máquina Venceu');
+      setLoses(loses + 1);
     }
   };
 
@@ -45,6 +50,23 @@ function App() {
     setMachineChoice(null);
     setResult(null);
   };
+
+  const handleGameOver = () => {
+    setGameOver(true);
+  }
+
+  const handleRestart = () => {
+    setVictories(0);
+    setLoses(0);
+    setDraws(0);
+    setResult(null);
+    setSelectedChoice(null);
+    setMachineChoice(null);
+    setGameOver(false);
+  }
+
+
+  
 
   return (
     <div className='container'>
@@ -104,7 +126,22 @@ function App() {
             {result === 'Jogador Venceu' && <div className="resultado-texto" id='texto-verde'>{result}!</div>}
             {result === 'Máquina Venceu' && <div className="resultado-texto" id='texto-vermelho'>{result}!</div>}
             <Button color='azul' label='Jogar Novamente' onClick={handlePlayAgain} />
+            <Button color='rosa' label='Finalizar Jogo' onClick={handleGameOver}/>
           </div>  
+        </div>
+      )}
+
+      {gameOver === true && (
+        <div className="game-over">
+          <div className="caixa">
+            <div className="resultado-texto" id='texto-vermelho'>Game Over!</div>
+            <div className="resultados">
+              <p>Vitórias: {victories}</p>
+              <p>Derrotas: {loses}</p>
+              <p>Empates: {draws}</p>
+            </div>
+            <Button color='azul' label='Jogar Novamente' onClick={handleRestart} />
+          </div>
         </div>
       )}
     </div>

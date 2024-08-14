@@ -121,5 +121,28 @@
     font-weight: 800;
     margin-bottom: 5vh;
   }
+
+  .game-over{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000; 
+  }
+
+  .resultados{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
   
   

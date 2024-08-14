@@ -17,7 +17,7 @@ const Choice: React.FC<ChoiceProps> = ({ choice, selected, onSelect }) => {
   return (
     <button
       className='choice'
-      style={{ border: borderStyle }}
+      style={{ border: borderStyle}}
       onClick={() => onSelect(choice)}
     >
       {choice === 'Pedra' && <Pedra id='icon' />}

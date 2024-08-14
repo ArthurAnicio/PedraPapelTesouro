@@ -1,6 +1,7 @@
 .button{
     width: 10vw;
     height: 6vh;
+    margin: 1rem;
     color: var(--branco);
     font-size: 2em;
     font-weight: 700;
